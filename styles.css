@@ -1,0 +1,237 @@
+@font-face {
+    font-family: custom;
+    src: url(./One\ Slice.otf);
+}
+
+body {
+    transition: all 0.5s ease;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --rad: 280%;
+    --height: calc(var(--rad)*2);
+    --cirPos: -246%;
+}
+
+#text {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 45px;
+    height: 50px;
+}
+
+.title {
+    font-family: custom;
+    font-size: 40px;
+    position: relative;
+    top: -37px;
+}
+
+#cir {
+    border-radius: 50%;
+    width: var(--rad);
+    height: var(--height);
+    position: absolute;
+    top:  calc(var(--cirPos) - 100%);
+    left: var(--cirPos);
+}
+
+#cir2 {
+    border-radius: 50%;
+    width: 20%;
+    height: 40%;
+    position: absolute;
+    bottom:  30%;
+    right: 10%;
+}
+
+@keyframes dotsanim {
+    0% {
+        transform: translate(-40px, 50px) rotate(25deg);
+    }
+    100% {
+        transform: translate(0, 5px) rotate(35deg);
+    }
+}
+
+#p-dot {
+    width: 240px;
+    height: 240px;
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    background-repeat: repeat;
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+    rotate: -25deg;
+    animation: dotsanim 13s infinite alternate ease-in-out;
+}
+
+#p-dot2 {
+    width: 240px;
+    height: 240px;
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    background-repeat: repeat;
+    position: absolute;
+    bottom: 25%;
+    right: 20%;
+    rotate: 10deg;
+    animation: dotsanim 13s infinite alternate ease-in-out;
+}
+
+#hex {
+    position: absolute;
+    bottom: 0.1%;
+    right: 3%;
+    font-weight: bold;
+    font-size: 50px;
+    border: 0;
+    border-radius: 10px;
+    width: 250px;
+    
+}
+
+.picker {
+    position: absolute;
+    top: 25%;
+    left: 43.5%;
+    width: 25%;
+}
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+#rangeRed {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 50%; /* Full-width */
+  height: 15px; /* Specified height */
+  border-radius: 12px;
+  background-color: rgb(255, 0, 0);
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  margin-bottom: 50px;
+}
+
+#rangeGreen {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 50%; /* Full-width */
+  height: 15px; /* Specified height */
+  border-radius: 12px;
+  background-color: rgb(0, 255, 0);
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  margin-bottom: 50px;
+}
+
+#rangeBlue {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 50%; /* Full-width */
+  height: 15px; /* Specified height */
+  border-radius: 12px;
+  background-color: rgb(0, 0, 255);
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  margin-bottom: 50px;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  border-radius: 50%;
+  background: rgb(233, 233, 233); /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+#colorstorage {
+  width: 45%;
+  height: 60%;
+  position: absolute;
+  top: 130%;
+  left: 28%;
+  color: rgb(32, 32, 32);
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 150%;
+  text-indent: 10px;
+}
+
+#save {
+  position: absolute;
+  bottom: 0.1%;
+  right: 17%;
+  height: 60px;
+  width: 60px;
+  border: 0px;
+  border-radius: 10px;
+  opacity: 0.8;
+  transition: all 0.5s ease;
+}
+
+#save:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+#b1 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 20%;
+  left: 23.5%;
+  border: 10px solid rgb(255, 255, 0, .2);
+}
+
+#b2 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: -0.5%;
+  left: 43.5%;
+  border: 10px solid rgb(255, 255, 0, .2);
+}
+
+#b3 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: -21.2%;
+  left: 63.5%;
+  border: 10px solid rgb(255, 255, 0, .2);
+}
+
+#colorstorage a {
+  color: black;
+  text-decoration: none;
+}

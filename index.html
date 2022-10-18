@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Colorpicker</title>
+</head>
+<body>
+    <div class="picker">
+        <form>
+            <input type="range" min="0" max="255" value="255" class="slider" id="rangeRed">
+            <input type="range" min="0" max="255" value="255" class="slider" id="rangeGreen">
+            <input type="range" min="0" max="255" value="255" class="slider" id="rangeBlue">
+        </form>
+    </div>
+    <div id="text">
+        <p class="title">Colorpicker</p>
+    </div>
+    <div id="cir"></div>
+    <div id="cir2"></div>
+    <div id="p-dot"></div>
+    <div id="p-dot2"></div>
+    <input id="hex" type="text">
+    <button id="save"></button>
+
+    <div id="colorstorage">
+        <p id="stl">Save Colors</p>
+        <p id="stlD">Enter a color in the hex input and press save</p>
+        <div id="b1">
+        </div>
+        <div id="b2">
+        </div>
+        <div id="b3">
+        </div>
+        <a href="./favcols.html">Click here to 30 see favorite colors</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
