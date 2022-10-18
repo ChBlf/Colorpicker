@@ -18,6 +18,3 @@
 
 - Colorpicker: [Colorpicker](https://bit.ly/colorpicker_blfr)
 - Discord Server: [Bot Hometown](https://discord.gg/cNuzW5eN4S)
-
-
-- By Bluefire
