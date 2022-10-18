@@ -172,11 +172,10 @@ hexShow.addEventListener('keydown', (k) => {
         pdot2.style = `background-image: radial-gradient(${hexShow.value}5F 10%, transparent 11%);`
         textBg.style = `background-color: ${hexShow.value}3F;`
         hexShow.style = `color: ${hexShow.value}; background-color: ${hexShow.value}3F`
+        colStr.style = `background-color: ${hexShow.value}1F`
+        saveBtn.style = `background-color: ${hexShow.value}8F`
         if (hexShow.value.toLowerCase() == "#ffffff") {
             hexShow.style = `color: rgb(0, 0, 0);`
         }
-
-        colStr.style = `background-color: rgba(${red}, ${green}, ${blue}, 0.1)`
-        saveBtn.style = `background-color: rgba(${red}, ${green}, ${blue}, 0.8)`
     } 
 })
