@@ -69,9 +69,13 @@ saveBtn.onclick = function() {
 }
 
 const col = JSON.parse(localStorage.getItem('col'))
-b1.style = `background-color: ${col[0]}`
-b2.style = `background-color: ${col[1]}`
-b3.style = `background-color: ${col[2]}`
+
+if (col) {
+  b1.style = `background-color: ${col[0]}`
+  b2.style = `background-color: ${col[1]}`
+  b3.style = `background-color: ${col[2]}`
+}
+
 
 // Update the current slider value (each time you drag the slider handle)
 sliderRed.oninput = function(c) {
